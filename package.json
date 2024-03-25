@@ -1,7 +1,7 @@
 {
-  "name": "prism-themes",
-  "version": "1.9.0",
-  "description": "Additional themes for the Prism syntax highlighting library.",
+  "name": "automad-prism-themes",
+  "version": "0.1.0",
+  "description": "An Automad fork of the Prism themes package.",
   "main": "index.js",
   "scripts": {
     "build": "gulp minify",
@@ -17,9 +17,9 @@
   "author": "Lea Verou",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/prismjs/prism-themes/issues"
+    "url": "https://github.com/automadcms/automad-prism-themes/issues"
   },
-  "homepage": "https://github.com/prismjs/prism-themes#readme",
+  "homepage": "https://github.com/automadcms/automad-prism-themes#readme",
   "devDependencies": {
     "capture-website": "^0.4.0",
     "gulp": "^4.0.2",
