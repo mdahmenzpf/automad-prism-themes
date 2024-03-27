@@ -56,19 +56,6 @@ async function checkAvailableThemes() {
 	}
 }
 
-const ISSUE_RE = /#(\d+)(?![\d\]])/g;
-const ISSUE_SUB =
-	'[#$1](https://github.com/automadcms/automad-prism-themes/issues/$1)';
-const CHANGELOG = 'CHANGELOG.md';
-
-async function linkify() {
-	let changelog = await fsAsync.readFile(CHANGELOG, 'utf-8');
-
-	changelog = changelog.replace(ISSUE_RE, ISSUE_SUB);
-
-	await fsAsync.writeFile(CHANGELOG, changelog, 'utf-8');
-}
-
 function minify() {
 	return src(['themes/*.css', '!themes/base.css'])
 		.pipe(header(fs.readFileSync('./themes/base.css', 'utf8')))
@@ -77,5 +64,4 @@ function minify() {
 }
 
 exports.check = parallel(checkScreenshots, checkAvailableThemes);
-exports.linkify = linkify;
 exports.minify = minify;
