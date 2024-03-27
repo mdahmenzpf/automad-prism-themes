@@ -3,3 +3,4 @@ node_modules/
 # minified themes
 themes/*.min.css
 dist
+themes.md
