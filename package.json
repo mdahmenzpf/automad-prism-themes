@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp minify",
-    "screenshot": "node screenshots.mjs",
+    "generate": "bash bin/generate-gallery.sh && bash bin/generate-json.sh",
+    "screenshot": "node bin/screenshots.mjs",
     "check": "gulp check",
     "lint": "stylelint \"themes/*.css\"",
     "lint-fix": "stylelint \"themes/*.css\" --fix",
     "test": "npm run lint && gulp check",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build && npm run generate"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "stylelint-config-standard": "^19.0.0"
   },
   "files": [
-    "dist/*.css"
+    "dist/*.css",
+    "themes.json"
   ]
 }
