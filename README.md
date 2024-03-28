@@ -12,6 +12,7 @@ A modern collection of syntax highlighting themes for [Prism](https://prismjs.co
 - [Themes](#themes)
 - [How to use a Theme](#how-to-use-a-theme)
 - [Customizing](#customizing)
+- [Adding new Themes](#adding-new-themes)
 
 <!-- vim-markdown-toc -->
 
@@ -78,3 +79,14 @@ Some basic theme settings are exposed using CSS custom properties. These propert
   --am-prism-line-height: 1.5;
 }
 ```
+
+## Adding new Themes
+
+Follow these steps in order to add a new theme:
+
+1. Add a new `.css` file following the `prism-[theme].css` naming pattern including the theme styles.
+2. Remove all common styles that are already defined in `themes/base.css`. (See other themes)
+3. Generate missing screenshots and update the `README.md` by running:
+   ```bash
+   npm run screenshots
+   ```
