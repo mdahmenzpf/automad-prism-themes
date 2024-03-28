@@ -1,21 +1,20 @@
 {
   "name": "automad-prism-themes",
   "version": "0.1.0",
-  "description": "An Automad fork of the Prism themes package.",
+  "description": "An modernized fork of the Prism themes package, optimized for Automad.",
   "main": "index.js",
   "scripts": {
-    "build": "gulp minify",
-    "generate": "bash bin/generate-gallery.sh && bash bin/generate-json.sh",
-    "screenshot": "node bin/screenshots.mjs",
+    "build": "gulp minify && bash bin/generate-json.sh",
+    "screenshots": "node bin/screenshots.mjs && bash bin/generate-gallery.sh",
     "check": "gulp check",
     "lint": "stylelint \"themes/*.css\"",
     "lint-fix": "stylelint \"themes/*.css\" --fix",
     "test": "npm run lint && gulp check",
-    "prepublishOnly": "npm run build && npm run generate"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prismjs/prism-themes.git"
+    "url": "git+https://github.com/automadcms/automad-prism-themes.git"
   },
   "author": "Lea Verou",
   "license": "MIT",
@@ -32,7 +31,6 @@
     "stylelint-config-standard": "^19.0.0"
   },
   "files": [
-    "dist/*.css",
-    "themes.json"
+    "dist/*"
   ]
 }

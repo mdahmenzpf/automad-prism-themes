@@ -1,15 +1,15 @@
 import captureWebsite from 'capture-website';
 import * as fs from 'fs/promises';
 
-const distDir = './dist';
+const themesDir = './themes';
 const screenshotDir = './screenshots';
 
 /**
  * Returns the names of all themes. This includes the `prism-` prefix.
  */
 async function getThemes() {
-	return (await fs.readdir(distDir))
-		.map((f) => (/^.+(?=\.css$)/.exec(f) || [''])[0])
+	return (await fs.readdir(themesDir))
+		.map((f) => (/^prism.+(?=\.css$)/.exec(f) || [''])[0])
 		.filter((f) => f);
 }
 
@@ -46,11 +46,16 @@ async function screenshotTheme(theme, overwrite) {
 		}
 	}
 
+	console.log(`Generating screenshot for ${theme}`);
+
 	await captureWebsite.file(screenshotDir + '/code.html', file, {
 		defaultBackground: false,
 		scaleFactor: 1,
 		element: 'pre',
-		styles: [await fs.readFile(`${distDir}/${theme}.css`, 'utf-8')],
+		styles: [
+			await fs.readFile(`${themesDir}/base.css`, 'utf-8'),
+			await fs.readFile(`${themesDir}/${theme}.css`, 'utf-8'),
+		],
 	});
 }
 

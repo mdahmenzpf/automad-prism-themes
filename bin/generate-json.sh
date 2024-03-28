@@ -1,7 +1,7 @@
 #!/bin/bash
 
 line=''
-file="themes.json"
+file="dist/themes.json"
 count=$(($(ls screenshots/*.png | wc -l)))
 i=0
 endOfLine=','
