@@ -2,7 +2,7 @@
 
 A modern [collection](https://automadcms.github.io/automad-prism-themes) of syntax highlighting themes for [Prism](https://prismjs.com).
 
-> [!NOTE]
+> [!IMPORTANT]
 > This is a fork of the [PrismJS/prism-themes](https://github.com/PrismJS/prism-themes) repository. All included themes are optimized to work with Automad. New themes have been added, some have been removed.
 
 | [Visit the Theme Gallery](https://automadcms.github.io/automad-prism-themes) |
@@ -12,11 +12,16 @@ A modern [collection](https://automadcms.github.io/automad-prism-themes) of synt
 
 <!-- vim-markdown-toc GFM -->
 
+- [Included Themes](#included-themes)
 - [How to use a Theme](#how-to-use-a-theme)
 - [Customizing](#customizing)
 - [Adding new Themes](#adding-new-themes)
 
 <!-- vim-markdown-toc -->
+
+## Included Themes
+
+A gallery with screenshots of all included themes can be found [here](https://automadcms.github.io/automad-prism-themes).
 
 ## How to use a Theme
 
