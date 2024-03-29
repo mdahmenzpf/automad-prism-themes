@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Hello Bulma!</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+		/>
+		<style>
+			.grid {
+				--bulma-grid-gap: 3rem;
+			}
+
+			img {
+				width: 100%;
+				border-radius: 0.5rem;
+				border: 1px solid var(--bulma-text-soft);
+			}
+
+			@media (prefers-color-scheme: dark) {
+				:root {
+					color-scheme: dark;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar container is-fluid py-2">
+			<div class="navbar-brand">
+				<div
+					class="navbar-item has-text-primary-100 is-size-5 has-text-weight-medium px-0"
+				>
+					Automad Prism Themes
+				</div>
+			</div>
+			<div class="navbar-end">
+				<div class="navbar-item px-0">
+					<div class="buttons">
+						<a
+							href="https://github.com/automadcms/automad-prism-themes"
+							class="button"
+							target="_blank"
+						>
+							GitHub
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container is-fluid">
+			<div class="grid is-col-min-9 my-6 pb-4">__GALLERY__</div>
+		</div>
+	</body>
+</html>

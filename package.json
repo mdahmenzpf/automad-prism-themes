@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp minify && bash bin/generate-json.sh",
-    "screenshots": "node bin/screenshots.mjs && bash bin/generate-gallery.sh",
+    "screenshots": "node bin/screenshots.mjs",
+    "gallery": "bash bin/generate-gallery.sh",
     "check": "gulp check",
     "lint": "stylelint \"themes/*.css\"",
     "lint-fix": "stylelint \"themes/*.css\" --fix",

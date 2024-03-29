@@ -1,10 +1,10 @@
 #!/bin/bash
 
-i=0
-line=''
-file="themes.md"
+file="public/index.html"
 
-echo '' >$file
+mkdir public 2>/dev/null
+
+gallery=''
 
 for png in screenshots/*.png; do
 	theme=$(basename -- $png .png)
@@ -14,33 +14,22 @@ for png in screenshots/*.png; do
 	name=($name)
 	name="${name[@]^}"
 
-	i=$((i + 1))
+	read -r -d '' item <<-EOF
+		<a
+			href="https://github.com/automadcms/automad-prism-themes/blob/master/themes/${theme}.css" 
+			class="cell"
+			target="_blank"
+		>
+			<img src="${theme}.png">
+			<div class="has-text-text">${name}</div>
+		</a>
+	EOF
 
-	line="${line}| ![${name}](${png})<br>[${name}](themes/${theme}.css) "
+	gallery="${gallery}\n${item}"
 
-	if [[ $((i % 3)) == 0 ]]; then
-		line="${line} |"
-		echo "$line" >>$file
-		line=''
-	fi
-
-	if [[ $i == 3 ]]; then
-		echo '|:---:|:---:|:---:|' >>$file
-	fi
+	cp $png "public/${theme}.png" 2>/dev/null
 done
 
-rest=$((i % 3))
+html=$(<screenshots/gallery-template.html)
 
-n=0
-
-while [ $n -ne $rest ]; do
-	n=$(($n + 1))
-	line="${line} |"
-done
-
-echo "$line" >>$file
-
-lead='^<!-- gallery-start -->'
-tail='^<!-- gallery-end -->'
-gsed -i -e "/$lead/,/$tail/{ /$lead/{p; r $file
-        }; /$tail/p; d }" README.md
+echo -e "${html/__GALLERY__/$gallery}" >$file
