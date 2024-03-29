@@ -13,16 +13,16 @@ for png in screenshots/*.png; do
 
 	theme=$(basename -- $png .png)
 
-	name=${theme/prism-/}
-	name=${name//-/ }
-	name=($name)
-	name="${name[@]^}"
+	value=${theme/prism-/}
+	text=${value//-/ }
+	text=($text)
+	text="${text[@]^}"
 
 	if [[ $i == $count ]]; then
 		endOfLine=''
 	fi
 
-	echo "  { \"text\": \"$name\", \"value\": \"$theme\" }$endOfLine" >>$file
+	echo "  { \"text\": \"$text\", \"value\": \"$value\" }$endOfLine" >>$file
 done
 
 echo ']' >>$file
