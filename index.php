@@ -70,7 +70,7 @@ JS;
 		<link
 			id="link"
 			rel="stylesheet"
-			href="themes/<?php echo $selected; ?>"
+			href="themes/<?php echo $selected . '?t=' . time(); ?>"
 		/>
 		<style>
 			@media (prefers-color-scheme: dark) {
