@@ -1,3 +1,4 @@
 node_modules/
 dist/
 public/
+.php-cs-fixer.cache
