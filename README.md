@@ -65,7 +65,8 @@ Follow these steps in order to add a new theme:
 
 1. Add a new `.css` file following the `prism-[theme].css` naming pattern including the theme styles.
 2. Remove all common styles that are already defined in `themes/base.css`. (See other themes)
-3. Generate missing screenshots:
+3. Preview the theme in the included PHP testing page. (`index.php`)
+4. Generate missing screenshots:
    ```bash
    npm run screenshots
    ```
