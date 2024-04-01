@@ -1,5 +1,7 @@
 pre[class*='language-'] {
-	padding: var(--am-prism-padding, 1rem);
+	--padding-y: var(--am-prism-padding-y, 1rem);
+	--padding-x: var(--am-prism-padding-x, 1rem);
+	padding: var(--padding-y) var(--padding-x);
 	overflow: auto;
 	font-size: var(--am-prism-font-size, 0.85em);
 	border-radius: var(--am-prism-border-radius, 0.4em);
@@ -28,4 +30,12 @@ pre[class*='language-'] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+}
+
+pre[class*='language-'] .line-numbers-rows {
+	box-sizing: content-box;
+	margin: calc(var(--padding-y) * -1) 0;
+	padding: var(--padding-y) 0;
+	max-height: 100%;
+	overflow: hidden;
 }
