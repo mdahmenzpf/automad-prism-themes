@@ -4,6 +4,11 @@ $themes = array_map('basename', glob(__DIR__ . '/themes/prism-*.css'));
 $default = $themes[0];
 $selected = $_GET['theme'] ?? $default;
 
+$lightmode = $_GET['light'] ?? false;
+$ui = $lightmode ? 'theme-light' : 'theme-dark';
+$uiButton = $lightmode ? 'dark' : 'light';
+$uiButtonQuery = http_build_query(array_merge($_GET, array('light' => !$lightmode)));
+
 $code = <<< JS
 /**
  * Register a keycombo.
@@ -50,7 +55,7 @@ export const debounce = (
 JS;
 
 ?><!doctype html>
-<html>
+<html class="<?php echo $ui; ?>">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -72,11 +77,20 @@ JS;
 			rel="stylesheet"
 			href="themes/<?php echo $selected . '?t=' . time(); ?>"
 		/>
+		<link href="https://unpkg.com/@fontsource/jetbrains-mono@5.0.19/index.css" rel="stylesheet">
 		<style>
-			@media (prefers-color-scheme: dark) {
-				:root {
-					color-scheme: dark;
-				}
+			:root {
+				--am-prism-font-family: "JetBrains Mono";
+				--am-prism-font-size: 1rem;
+			}
+
+			.theme-dark {
+				color-scheme: dark;
+			}
+
+			.dropdown-content {
+				max-height: 85vh;
+				overflow: auto;
 			}
 		</style>
 	</head>
@@ -84,7 +98,7 @@ JS;
 		<nav class="navbar container is-fluid py-2">
 			<div class="navbar-brand">
 				<div
-					class="navbar-item has-text-primary-100 is-size-5 has-text-weight-medium px-0"
+					class="navbar-item is-size-5 has-text-weight-medium px-0"
 				>
 					Automad Prism Themes Tester
 				</div>
@@ -101,17 +115,20 @@ JS;
 							<div class="dropdown-menu" id="dropdown-menu" role="menu">
 								<div class="dropdown-content">
 									<?php foreach ($themes as $theme) {
-									    echo '<a href="?theme=' . $theme . '" class="dropdown-item">' . $theme . '</a>';
+									    $active = $theme == $selected ? 'is-active' : '';
+									    $query = http_build_query(array_merge($_GET, array('theme' => $theme)));
+									    echo '<a href="?' . $query . '" class="dropdown-item ' . $active . '">' . $theme . '</a>';
 									} ?>
 								</div>
 							</div>
 						</div>
+						<a href="?<?php echo $uiButtonQuery ?>" class="button"><?php echo $uiButton; ?></a>		
 					</div>
 				</div>
 			</div>
 		</nav>
 		<div class="container mt-6 line-numbers">
-			<pre><code class="language-javascript"><?php echo $code; ?></code></pre>
+			<pre><code class="language-typescript"><?php echo $code; ?></code></pre>
 		</div>
 	</body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
