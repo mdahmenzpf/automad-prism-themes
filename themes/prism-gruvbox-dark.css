@@ -119,10 +119,9 @@ pre[class*='language-'] {
 	background: #fb4934; /* red2 */
 }
 
-.line-numbers.line-numbers .line-numbers-rows {
-	border-right-color: #242829;
-}
-
-.line-numbers .line-numbers-rows > span:before {
-	color: #3a4042;
+:root {
+	--am-prism-line-numbers-color: #3a4042;
+	--am-prism-line-numbers-border: #242829;
+	--am-prism-copy-color: #ebdbb2;
+	--am-prism-copy-bg: #a8998455;
 }

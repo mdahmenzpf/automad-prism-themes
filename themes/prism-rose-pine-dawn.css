@@ -46,6 +46,7 @@ pre[class*='language-'] {
 	color: #9893a5;
 }
 
+.token.keyword,
 .token.constant {
 	color: #286983;
 }
@@ -104,10 +105,9 @@ pre[class*='language-'] {
 	font-style: italic;
 }
 
-.line-numbers.line-numbers .line-numbers-rows {
-	border-right-color: #9893a533;
-}
-
-.line-numbers .line-numbers-rows > span:before {
-	color: #9893a577;
+:root {
+	--am-prism-line-numbers-color: #9893a577;
+	--am-prism-line-numbers-border: #9893a533;
+	--am-prism-copy-color: #907aa9;
+	--am-prism-copy-bg: #9893a518;
 }

@@ -34,7 +34,7 @@ code[class*='language-'] ::selection {
 pre[class*='language-'] {
 	color: white;
 	background: #ffffff;
-	border: 1px solid #6e778133;
+	border: var(--am-prism-border-width, 1px) solid #6e778133;
 }
 
 :not(pre) > code[class*='language-'] {
@@ -124,10 +124,9 @@ pre[class*='language-'] {
 	font-style: italic;
 }
 
-.line-numbers.line-numbers .line-numbers-rows {
-	border-right-color: #6e778133;
-}
-
-.line-numbers .line-numbers-rows > span:before {
-	color: #6e778177;
+:root {
+	--am-prism-line-numbers-color: #6e778177;
+	--am-prism-line-numbers-border: #6e778133;
+	--am-prism-copy-color: #0550aedd;
+	--am-prism-copy-bg: #6e778111;
 }

@@ -53,6 +53,7 @@ Some basic theme settings are exposed using CSS custom properties. These propert
 :root {
   --am-prism-padding-y: 1rem;
   --am-prism-padding-x: 1rem;
+  --am-prism-border-width: 1px;
   --am-prism-border-radius: 0.3em;
   --am-prism-font-size: 0.875rem;
   --am-prism-font-family: ui-monospace;

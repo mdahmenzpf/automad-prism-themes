@@ -130,18 +130,6 @@ pre > code.highlight {
 	outline: 0.4em solid #5c705c;
 	outline-offset: 0.4em;
 }
-
-/* overrides color-values for the Line Numbers plugin
- * http://prismjs.com/plugins/line-numbers/
- */
-.line-numbers.line-numbers .line-numbers-rows {
-	border-right-color: #2c302c;
-}
-
-.line-numbers .line-numbers-rows > span:before {
-	color: #3b423b;
-}
-
 /* overrides color-values for the Line Highlight plugin
 * http://prismjs.com/plugins/line-highlight/
 */
@@ -157,4 +145,11 @@ pre > code.highlight {
 		rgba(162, 179, 77, 0.2) 70%,
 		rgba(162, 179, 77, 0)
 	);
+}
+
+:root {
+	--am-prism-line-numbers-color: #3b423b;
+	--am-prism-line-numbers-border: #2c302c;
+	--am-prism-copy-color: #b3d6b3;
+	--am-prism-copy-bg: #535f5355;
 }

@@ -39,3 +39,47 @@ pre[class*='language-'] .line-numbers-rows {
 	max-height: 100%;
 	overflow: hidden;
 }
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-width: var(--am-prism-border-width, 1px);
+	border-right-color: var(--am-prism-line-numbers-border);
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: var(--am-prism-line-numbers-color);
+}
+
+div.code-toolbar > .toolbar {
+	top: 0.3rem !important;
+	right: 0.3rem !important;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button.copy-to-clipboard-button {
+	display: inline-flex;
+	padding: 0 0.75em;
+	font-size: var(--am-prism-font-size, 0.8em);
+	font-family: var(--am-prism-font-family, ui-monospace), monospace;
+	font-weight: 600 !important;
+	line-height: 2em;
+	color: var(--am-prism-copy-color);
+	background-color: var(--am-prism-copy-bg);
+	border-radius: calc(var(--am-prism-border-radius, 0.4em) - 0.1em);
+	cursor: pointer;
+	box-shadow: none;
+	opacity: 1;
+	transition: opacity 0.2s;
+}
+
+div.code-toolbar
+	> .toolbar
+	> .toolbar-item
+	> button.copy-to-clipboard-button:hover {
+	opacity: 0.8;
+}
+
+div.code-toolbar
+	> .toolbar
+	> .toolbar-item
+	> button.copy-to-clipboard-button:focus {
+	opacity: 1;
+}

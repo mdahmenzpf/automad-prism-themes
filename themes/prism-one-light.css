@@ -231,19 +231,12 @@ pre[class*='language-'] *::selection {
 }
 
 /* Toolbar plugin overrides */
-/* Space out all buttons and move them away from the right edge of the code block */
-div.code-toolbar > .toolbar.toolbar > .toolbar-item {
-	margin-right: 0.4em;
-}
-
 /* Styling the buttons */
 div.code-toolbar > .toolbar.toolbar > .toolbar-item > button,
 div.code-toolbar > .toolbar.toolbar > .toolbar-item > a,
 div.code-toolbar > .toolbar.toolbar > .toolbar-item > span {
 	background: hsl(230, 1%, 90%);
 	color: hsl(230, 6%, 44%);
-	padding: 0.1em 0.4em;
-	border-radius: 0.3em;
 }
 
 div.code-toolbar > .toolbar.toolbar > .toolbar-item > button:hover,

@@ -34,7 +34,7 @@ code[class*='language-'] ::selection {
 pre[class*='language-'] {
 	color: white;
 	background: #f1f5f9;
-	border: 1px solid #90969b29;
+	border: var(--am-prism-border-width, 1px) solid #90969b29;
 }
 
 :not(pre) > code[class*='language-'] {
@@ -116,10 +116,9 @@ pre[class*='language-'] {
 	color: #90969b;
 }
 
-.line-numbers.line-numbers .line-numbers-rows {
-	border-right-color: #90969b29;
-}
-
-.line-numbers .line-numbers-rows > span:before {
-	color: #90969b66;
+:root {
+	--am-prism-line-numbers-color: #90969b66;
+	--am-prism-line-numbers-border: #90969b29;
+	--am-prism-copy-color: #4f565c;
+	--am-prism-copy-bg: #90969b22;
 }

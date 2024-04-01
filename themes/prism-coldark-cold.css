@@ -238,7 +238,7 @@ pre[id].linkable-line-numbers.linkable-line-numbers
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers.line-numbers .line-numbers-rows {
-	border-right: 1px solid #8da1b97a;
+	border-right: var(--am-prism-border-width, 1px) solid #8da1b97a;
 	background: #d0dae77a;
 }
 
@@ -290,7 +290,7 @@ pre > code.diff-highlight .token.token.inserted:not(.prefix) {
  * https://prismjs.com/plugins/command-line/
  */
 .command-line .command-line-prompt {
-	border-right: 1px solid #8da1b97a;
+	border-right: var(--am-prism-border-width, 1px) solid #8da1b97a;
 }
 
 .command-line .command-line-prompt > span:before {

@@ -118,10 +118,9 @@ pre[class*='language-'] {
 	color: #f9ee98;
 }
 
-.line-numbers.line-numbers .line-numbers-rows {
-	border-right-color: #586e7522;
-}
-
-.line-numbers .line-numbers-rows > span:before {
-	color: #586e7566;
+:root {
+	--am-prism-line-numbers-color: #586e7566;
+	--am-prism-line-numbers-border: #586e7522;
+	--am-prism-copy-color: #839496;
+	--am-prism-copy-bg: #586e7533;
 }

@@ -237,7 +237,7 @@ pre[id].linkable-line-numbers.linkable-line-numbers
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers.line-numbers .line-numbers-rows {
-	border-right: 1px solid #0b121b;
+	border-right: var(--am-prism-border-width, 1px) solid #0b121b;
 	background: #0b121b7a;
 }
 
@@ -289,7 +289,7 @@ pre > code.diff-highlight .token.token.inserted:not(.prefix) {
  * https://prismjs.com/plugins/command-line/
  */
 .command-line .command-line-prompt {
-	border-right: 1px solid #0b121b;
+	border-right: var(--am-prism-border-width, 1px) solid #0b121b;
 }
 
 .command-line .command-line-prompt > span:before {

@@ -133,10 +133,9 @@ pre[class*='language-'] > code[class*='language-'] {
 	cursor: help;
 }
 
-.line-numbers.line-numbers .line-numbers-rows {
-	border-right-color: #8b949e22;
-}
-
-.line-numbers .line-numbers-rows > span:before {
-	color: #8b949e55;
+:root {
+	--am-prism-line-numbers-color: #8b949e55;
+	--am-prism-line-numbers-border: #8b949e22;
+	--am-prism-copy-color: #c9d1d9;
+	--am-prism-copy-bg: #8b949e22;
 }

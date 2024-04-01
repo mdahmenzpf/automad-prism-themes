@@ -136,10 +136,9 @@ pre[class*='language-'] {
 	font-style: italic;
 }
 
-.line-numbers.line-numbers .line-numbers-rows {
-	border-right-color: #41446b33;
-}
-
-.line-numbers .line-numbers-rows > span:before {
-	color: #41446baa;
+:root {
+	--am-prism-line-numbers-color: #41446baa;
+	--am-prism-line-numbers-border: #41446b33;
+	--am-prism-copy-color: #7bccfc;
+	--am-prism-copy-bg: #41446b55;
 }
