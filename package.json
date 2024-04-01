@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp minify && bash bin/generate-json.sh",
+    "release": "bash bin/release.sh",
     "screenshots": "node bin/screenshots.mjs",
     "gallery": "bash bin/generate-gallery.sh",
     "check": "gulp check",
