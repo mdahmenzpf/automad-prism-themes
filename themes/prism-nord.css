@@ -99,3 +99,11 @@ pre[class*='language-'] {
 .token.entity {
 	cursor: help;
 }
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #636f8833;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #636f8877;
+}

@@ -60,7 +60,7 @@ pre[class*='language-'] {
 }
 
 .token.variable {
-	color: undefined;
+	color: #027c9b;
 	font-style: italic;
 }
 
@@ -74,6 +74,7 @@ pre[class*='language-'] {
 	font-style: italic;
 }
 
+.token.function,
 .token.tag {
 	color: #68d4f1;
 }
@@ -82,6 +83,7 @@ pre[class*='language-'] {
 	color: #027c9b;
 }
 
+.token.operator,
 .token.selector {
 	color: #027c9b;
 }
@@ -93,4 +95,12 @@ pre[class*='language-'] {
 
 .token.italic {
 	font-style: italic;
+}
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #50a3b516;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #50a3b544;
 }

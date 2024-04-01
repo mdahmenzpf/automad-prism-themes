@@ -100,3 +100,11 @@ pre > code.highlight {
 	outline: 0.4em solid red;
 	outline-offset: 0.4em;
 }
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #79737933;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #79737955;
+}

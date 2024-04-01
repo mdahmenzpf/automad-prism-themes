@@ -131,7 +131,7 @@ pre[class*='language-'] {
 }
 
 .token.comment {
-	color: undefined;
+	color: #e8dbff55;
 	font-style: italic;
 }
 
@@ -142,4 +142,12 @@ pre[class*='language-'] {
 
 .token.italic {
 	font-style: italic;
+}
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #e8dbff11;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #e8dbff44;
 }

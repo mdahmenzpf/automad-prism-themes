@@ -78,6 +78,7 @@ pre[class*='language-'] {
 	color: #56949f;
 }
 
+.token.function,
 .token.attr-name {
 	color: #907aa9;
 }
@@ -101,4 +102,12 @@ pre[class*='language-'] {
 
 .token.italic {
 	font-style: italic;
+}
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #9893a533;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #9893a577;
 }

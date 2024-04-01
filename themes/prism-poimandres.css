@@ -134,3 +134,11 @@ pre[class*='language-'] {
 .token.italic {
 	font-style: italic;
 }
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #767c9d22;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #767c9d77;
+}

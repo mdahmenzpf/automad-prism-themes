@@ -134,3 +134,11 @@ pre[class*='language-'] {
 .token.inserted {
 	color: green;
 }
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #8e8e8e22;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #8e8e8e88;
+}

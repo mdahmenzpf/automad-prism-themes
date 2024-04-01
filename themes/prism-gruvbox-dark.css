@@ -118,3 +118,11 @@ pre[class*='language-'] {
 .token.deleted {
 	background: #fb4934; /* red2 */
 }
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #242829;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #3a4042;
+}

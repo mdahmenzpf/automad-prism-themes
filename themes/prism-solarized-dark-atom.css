@@ -117,3 +117,11 @@ pre[class*='language-'] {
 .token.attr-value {
 	color: #f9ee98;
 }
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #586e7522;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #586e7566;
+}

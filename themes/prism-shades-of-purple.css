@@ -171,3 +171,11 @@ code.language-css .token.selector > .token.pseudo-element {
 .line-highlight.line-highlight[data-end]:after {
 	content: '';
 }
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #b362ff11;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #b362ff44;
+}

@@ -132,3 +132,11 @@ pre[class*='language-'] {
 .token.italic {
 	font-style: italic;
 }
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: rgba(99, 119, 119, 0.1);
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: rgba(99, 119, 119, 0.5);
+}

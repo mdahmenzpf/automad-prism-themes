@@ -254,3 +254,11 @@ pre[class*='language-'] > code[class*='language-'] {
 	box-shadow: inset 5px 0 0 #f7d87c;
 	z-index: 0;
 }
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #80808022;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #80808077;
+}

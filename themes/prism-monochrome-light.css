@@ -110,3 +110,15 @@ pre[class*='language-'] {
 .token.italic {
 	font-style: italic;
 }
+
+.token.comment {
+	color: #8f8f8f;
+}
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #8f8f8f29;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #8f8f8f66;
+}

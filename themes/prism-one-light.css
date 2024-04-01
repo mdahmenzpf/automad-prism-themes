@@ -284,13 +284,13 @@ pre[id].linkable-line-numbers.linkable-line-numbers
 /* Line separating gutter from coding area */
 .line-numbers.line-numbers .line-numbers-rows,
 .command-line .command-line-prompt {
-	border-right-color: hsla(230, 8%, 24%, 0.2);
+	border-right-color: hsla(230, 8%, 24%, 0.15);
 }
 
 /* Stuff in the gutter */
 .line-numbers .line-numbers-rows > span:before,
 .command-line .command-line-prompt > span:before {
-	color: hsl(230, 1%, 62%);
+	color: hsla(230, 1%, 62%, 0.6);
 }
 
 /* Match Braces plugin overrides */

@@ -12,7 +12,7 @@ pre[class*='language-'] ::-moz-selection,
 code[class*='language-']::-moz-selection,
 code[class*='language-'] ::-moz-selection {
 	text-shadow: none;
-	background: undefined;
+	background: #293548;
 }
 
 pre[class*='language-']::selection,
@@ -20,7 +20,7 @@ pre[class*='language-'] ::selection,
 code[class*='language-']::selection,
 code[class*='language-'] ::selection {
 	text-shadow: none;
-	background: undefined;
+	background: #293548;
 }
 
 @media print {
@@ -109,4 +109,12 @@ pre[class*='language-'] {
 
 .token.italic {
 	font-style: italic;
+}
+
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #8b949e22;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #8b949e55;
 }
