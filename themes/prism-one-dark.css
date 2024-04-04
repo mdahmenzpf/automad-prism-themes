@@ -59,14 +59,6 @@ pre[class*='language-'] *::selection {
 	white-space: normal;
 }
 
-/* Print */
-@media print {
-	code[class*='language-'],
-	pre[class*='language-'] {
-		text-shadow: none;
-	}
-}
-
 .token.comment,
 .token.prolog,
 .token.punctuation,

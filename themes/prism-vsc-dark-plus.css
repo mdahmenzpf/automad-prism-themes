@@ -11,13 +11,6 @@ code[class*='language-'] *::selection {
 	background: #264f78;
 }
 
-@media print {
-	pre[class*='language-'],
-	code[class*='language-'] {
-		text-shadow: none;
-	}
-}
-
 pre[class*='language-'] {
 	background: #1e1e1e;
 }
