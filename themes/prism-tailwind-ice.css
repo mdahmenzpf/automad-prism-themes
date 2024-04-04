@@ -30,8 +30,7 @@ code[class*='language-'] ::selection {
 pre[class*='language-'] {
 	color: white;
 	background: #ffffff;
-	border: var(--am-prism-border-width, 1px) solid
-		var(--am-prism-border-color);
+	border: var(--am-prism-border-width, 1px) solid var(--am-prism-border-color);
 }
 
 :not(pre) > code[class*='language-'] {
@@ -48,6 +47,7 @@ pre[class*='language-'] {
 	color: #805ad5;
 }
 
+.token.attr-name,
 .token.class-name,
 .token.function-definition {
 	color: #805ad5;
@@ -69,6 +69,7 @@ pre[class*='language-'] {
 	color: #3182ce;
 }
 
+.token.attr-value,
 .token.string {
 	color: #38a169;
 }
