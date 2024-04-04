@@ -9,9 +9,10 @@
 			href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
 		/>
 		<style>
-			.theme-dark {
-				color-scheme: dark;
-				--bulma-scheme-main: hsl(220, 9%, 6%);
+			@media (prefers-color-scheme: dark) {
+				:root {
+					color-scheme: dark;
+				}
 			}
 
 			.grid {
@@ -25,10 +26,35 @@
 				}
 			}
 
+			p {
+				max-width: 52rem;
+			}
+
+			p code {
+				color: inherit;
+			}
+
 			img {
 				width: 100%;
 				border-radius: 0.4rem;
-				border: 1px solid hsla(220, 9%, 50%, 0.25);
+				box-shadow: 0 1rem 2rem -0.4rem rgba(0, 0, 0, 0.3);
+			}
+
+			.stack {
+				position: relative;
+			}
+
+			.stack :first-child {
+				width: 90%;
+				margin-bottom: 30%;
+			}
+
+			.stack :last-child {
+				position: absolute;
+				width: 90%;
+				top: 30%;
+				right: 0;
+				box-shadow: 0 1rem 2rem -0.4rem rgba(0, 0, 0, 0.3);
 			}
 		</style>
 	</head>
@@ -54,7 +80,23 @@
 			</div>
 		</nav>
 		<div class="container is-fluid">
-			<div class="grid is-col-min-9 my-6 pb-4">__GALLERY__</div>
+			<h2 class="is-size-3 pt-6 pb-4">Light/Dark Theme Combos</h2>
+			<p class="is-size-5">
+				Combo themes include two flavours &mdash; one light and one dark
+				theme. They can be used on sites that support both, light and
+				dark mode. By default the light theme will be displayed.
+				Whenever an HTML element has a class that contains the word
+				<i>dark</i>, all containing code blocks are rendered using the
+				dark falvour.
+			</p>
+			<div class="grid is-col-min-9 my-6 pb-4">__LIGHT_DARK__</div>
+			<h2 class="is-size-3 pt-2 pb-4">Single Themes</h2>
+			<p class="is-size-5">
+				Single themes just come in one <i>single</i> flavour. Unlike
+				theme combos, a single theme is not affacted by classes of
+				parent elements.
+			</p>
+			<div class="grid is-col-min-9 my-6 pb-4">__THEMES__</div>
 		</div>
 	</body>
 </html>

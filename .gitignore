@@ -2,3 +2,4 @@ node_modules/
 dist/
 public/
 .php-cs-fixer.cache
+light-dark-gallery.html

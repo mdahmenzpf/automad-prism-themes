@@ -69,7 +69,6 @@ $uiButtonQuery = http_build_query(array_merge($_GET, array('light' => !$lightmod
 
 			.theme-dark {
 				color-scheme: dark;
-				--bulma-scheme-main: hsl(220, 9%, 6%);
 			}
 
 			.dropdown-content {

@@ -31,5 +31,8 @@ for png in screenshots/*.png; do
 done
 
 html=$(<screenshots/gallery-template.html)
+lightDark=$(<light-dark-gallery.html)
 
-echo -e "${html/__GALLERY__/$gallery}" >$file
+html="${html/__LIGHT_DARK__/$lightDark}"
+
+echo -e "${html/__THEMES__/$gallery}" >$file

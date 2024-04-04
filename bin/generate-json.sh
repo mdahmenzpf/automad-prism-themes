@@ -2,19 +2,22 @@
 
 line=''
 file="dist/themes.json"
-count=$(($(ls screenshots/*.png | wc -l)))
+count=$(($(ls dist/*.css | wc -l)))
 i=0
 endOfLine=','
 
+echo "Generating themes.json ..."
+
 echo '[' >$file
 
-for png in screenshots/*.png; do
+for css in dist/*.css; do
 	i=$((i + 1))
 
-	theme=$(basename -- $png .png)
+	theme=$(basename -- $css .css)
 
 	value=${theme/prism-/}
-	text=${value//-/ }
+	text=${value/.light-dark/ (Light\/Dark Combo)}
+	text=${text//-/ }
 	text=($text)
 	text="${text[@]^}"
 
