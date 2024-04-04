@@ -1,6 +1,14 @@
 <?php
 
-$themes = array_map('basename', glob(__DIR__ . '/themes/prism-*.css'));
+$themes = array_map(
+    function ($file) {
+        return str_replace(__DIR__ . '/', '', $file);
+    },
+    array_merge(
+        glob(__DIR__ . '/dist/prism-*.light-dark.css'),
+        glob(__DIR__ . '/themes/prism-*.css')
+    )
+);
 $default = $themes[0];
 $selectedTheme = $_GET['theme'] ?? $default;
 
@@ -38,7 +46,7 @@ $uiButtonQuery = http_build_query(array_merge($_GET, array('light' => !$lightmod
 		<link
 			id="link"
 			rel="stylesheet"
-			href="themes/<?php echo $selectedTheme . '?t=' . time(); ?>"
+			href="<?php echo $selectedTheme . '?t=' . time(); ?>"
 		/>
 		<link href="https://unpkg.com/@fontsource/jetbrains-mono@5.0.19/index.css" rel="stylesheet">
 		<style>
@@ -48,8 +56,15 @@ $uiButtonQuery = http_build_query(array_merge($_GET, array('light' => !$lightmod
 				--am-prism-border-width: 1px;
 			}
 
+			/* Override Bulma styles for .tag class */
 			pre[class*='language-'] .tag {
-				all: inherit;
+				display: initial;
+				padding: 0;
+				height: auto;
+				font-size: inherit;
+				line-height: inherit;
+				white-space: pre;
+				background-color: transparent;
 			}
 
 			.theme-dark {
