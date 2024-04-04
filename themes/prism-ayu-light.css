@@ -1,0 +1,132 @@
+/**
+ * https://github.com/ayu-theme/vscode-ayu
+ */
+
+code[class*='language-'],
+pre[class*='language-'] {
+	color: #5c6166;
+}
+
+pre[class*='language-']::-moz-selection,
+pre[class*='language-'] ::-moz-selection,
+code[class*='language-']::-moz-selection,
+code[class*='language-'] ::-moz-selection {
+	text-shadow: none;
+	background: #035bd626;
+}
+
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection,
+code[class*='language-']::selection,
+code[class*='language-'] ::selection {
+	text-shadow: none;
+	background: #035bd626;
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+	color: white;
+	background: #f8f9fa;
+	border: var(--am-prism-border-width, 1px) solid var(--am-prism-border-color);
+}
+
+:not(pre) > code[class*='language-'] {
+	padding: 0.1em;
+	border-radius: 0.3em;
+	white-space: normal;
+}
+
+.token.comment {
+	color: #787b8099;
+	font-style: italic;
+}
+
+.token.string {
+	color: #86b300;
+}
+
+.token.symbol {
+	color: #86b300;
+}
+
+.token.regex {
+	color: #4cbf99;
+}
+
+.token.char {
+	color: #4cbf99;
+}
+
+.token.class-name,
+.token.constant {
+	color: #4cbf99;
+}
+
+.token.number {
+	color: #a37acc;
+}
+
+.token.builtin {
+	color: #a37acc;
+}
+
+.token.variable {
+	color: #5c6166;
+}
+
+.token.keyword,
+.token.operator {
+	color: #ed9366;
+}
+
+.token.punctuation {
+	color: #ed9366;
+}
+
+.token.function {
+	color: #f2ae49;
+}
+
+.token.attr-name {
+	color: #f2ae49;
+}
+
+.token.selector {
+	color: #f2ae49;
+}
+
+.token.tag {
+	color: #55b4d4;
+}
+
+.token.property {
+	color: #55b4d4;
+}
+
+.token.inserted {
+	color: #6cbf43;
+}
+
+.token.changed {
+	color: #478acc;
+}
+
+.token.deleted {
+	color: #ff7383;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+:root {
+	--am-prism-line-numbers-color: #939ba4aa;
+	--am-prism-border-color: #939ba433;
+	--am-prism-copy-color: #51575e;
+	--am-prism-copy-bg: #939ba428;
+}

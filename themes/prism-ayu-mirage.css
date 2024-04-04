@@ -1,0 +1,132 @@
+/**
+ * https://github.com/ayu-theme/vscode-ayu
+ */
+
+code[class*='language-'],
+pre[class*='language-'] {
+	color: #cccac2;
+}
+
+pre[class*='language-']::-moz-selection,
+pre[class*='language-'] ::-moz-selection,
+code[class*='language-']::-moz-selection,
+code[class*='language-'] ::-moz-selection {
+	text-shadow: none;
+	background: #409fff40;
+}
+
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection,
+code[class*='language-']::selection,
+code[class*='language-'] ::selection {
+	text-shadow: none;
+	background: #409fff40;
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+	color: white;
+	background: #1f2430;
+	border: var(--am-prism-border-width, 1px) solid var(--am-prism-border-color);
+}
+
+:not(pre) > code[class*='language-'] {
+	padding: 0.1em;
+	border-radius: 0.3em;
+	white-space: normal;
+}
+
+.token.comment {
+	color: #b8cfe680;
+	font-style: italic;
+}
+
+.token.string {
+	color: #d5ff80;
+}
+
+.token.symbol {
+	color: #d5ff80;
+}
+
+.token.regex {
+	color: #95e6cb;
+}
+
+.token.char {
+	color: #95e6cb;
+}
+
+.token.class-name,
+.token.constant {
+	color: #95e6cb;
+}
+
+.token.number {
+	color: #dfbfff;
+}
+
+.token.builtin {
+	color: #dfbfff;
+}
+
+.token.variable {
+	color: #cccac2;
+}
+
+.token.keyword,
+.token.operator {
+	color: #f29e74;
+}
+
+.token.punctuation {
+	color: #f29e74;
+}
+
+.token.function {
+	color: #ffd173;
+}
+
+.token.attr-name {
+	color: #ffd173;
+}
+
+.token.selector {
+	color: #ffd173;
+}
+
+.token.tag {
+	color: #5ccfe6;
+}
+
+.token.property {
+	color: #5ccfe6;
+}
+
+.token.inserted {
+	color: #87d96c;
+}
+
+.token.changed {
+	color: #80bfff;
+}
+
+.token.deleted {
+	color: #f27983;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+:root {
+	--am-prism-line-numbers-color: #b8cfe655;
+	--am-prism-border-color: #b8cfe618;
+	--am-prism-copy-color: #cccac2;
+	--am-prism-copy-bg: #b8cfe611;
+}
