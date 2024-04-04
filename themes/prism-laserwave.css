@@ -109,7 +109,7 @@ pre[class*='language-'] ::selection {
 
 :root {
 	--am-prism-line-numbers-color: #91889b55;
-	--am-prism-line-numbers-border: #91889b22;
+	--am-prism-border-color: #91889b22;
 	--am-prism-copy-color: #ffffffdd;
 	--am-prism-copy-bg: #91889b22;
 }

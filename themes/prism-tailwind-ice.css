@@ -31,7 +31,7 @@ pre[class*='language-'] {
 	color: white;
 	background: #ffffff;
 	border: var(--am-prism-border-width, 1px) solid
-		var(--am-prism-line-numbers-border);
+		var(--am-prism-border-color);
 }
 
 :not(pre) > code[class*='language-'] {
@@ -100,7 +100,7 @@ pre[class*='language-'] {
 
 :root {
 	--am-prism-line-numbers-color: #a0aec077;
-	--am-prism-line-numbers-border: #a0aec055;
+	--am-prism-border-color: #a0aec055;
 	--am-prism-copy-color: #3182ce;
 	--am-prism-copy-bg: #a0aec033;
 }

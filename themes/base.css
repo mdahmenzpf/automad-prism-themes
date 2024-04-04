@@ -42,7 +42,7 @@ pre[class*='language-'] .line-numbers-rows {
 
 .line-numbers.line-numbers .line-numbers-rows {
 	border-right-width: var(--am-prism-border-width, 1px);
-	border-right-color: var(--am-prism-line-numbers-border);
+	border-right-color: var(--am-prism-border-color);
 }
 
 .line-numbers .line-numbers-rows > span:before {

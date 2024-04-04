@@ -134,7 +134,7 @@ pre[class*='language-'] {
 
 :root {
 	--am-prism-line-numbers-color: #676b7977;
-	--am-prism-line-numbers-border: #676b7933;
+	--am-prism-border-color: #676b7933;
 	--am-prism-copy-color: #ffcc95;
 	--am-prism-copy-bg: #676b7933;
 }
