@@ -72,6 +72,7 @@ pre[class*='language-'] > code[class*='language-'] {
 	color: #8b949e;
 }
 
+.token.variable,
 .token.punctuation {
 	color: #c9d1d9;
 }
