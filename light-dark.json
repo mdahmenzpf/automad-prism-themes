@@ -1,0 +1,42 @@
+[
+	{
+		"light": "prism-boola-light.css",
+		"dark": "prism-boola-dark.css",
+		"name": "Boola"
+	},
+	{
+		"light": "prism-catppuccin-latte.css",
+		"dark": "prism-catppuccin-macchiato.css",
+		"name": "Catppuccin Macchiato"
+	},
+	{
+		"light": "prism-coldark-cold.css",
+		"dark": "prism-coldark-dark.css",
+		"name": "Coldark"
+	},
+	{
+		"light": "prism-github-light.css",
+		"dark": "prism-github-dark.css",
+		"name": "GitHub"
+	},
+	{
+		"light": "prism-gruvbox-light.css",
+		"dark": "prism-gruvbox-dark.css",
+		"name": "Gruvbox"
+	},
+	{
+		"light": "prism-one-light.css",
+		"dark": "prism-one-dark.css",
+		"name": "One"
+	},
+	{
+		"light": "prism-rose-pine-dawn.css",
+		"dark": "prism-rose-pine.css",
+		"name": "Rose Pine"
+	},
+	{
+		"light": "prism-tokyo-night-light.css",
+		"dark": "prism-tokyo-night-storm.css",
+		"name": "Tokyo Night Storm"
+	}
+]
