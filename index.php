@@ -19,10 +19,10 @@ $uiButtonQuery = http_build_query(array_merge($_GET, array('light' => !$lightmod
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Automad Prism Themes Tester</title>
-		<!-- <link -->
-		<!-- 	rel="stylesheet" -->
-		<!-- 	href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" -->
-		<!-- /> -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+		/>
 		<link 
 			rel="stylesheet" 
 			href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" 
@@ -49,7 +49,7 @@ $uiButtonQuery = http_build_query(array_merge($_GET, array('light' => !$lightmod
 			}
 
 			pre[class*='language-'] .tag {
-				/* all: inherit; */
+				all: inherit;
 			}
 
 			.theme-dark {
