@@ -105,11 +105,11 @@ pre[class*='language-'] > code[class*='language-'] {
 }
 
 .token.atrule,
-.token.attr-value,
 .token.keyword {
 	color: #a5d6ff;
 }
 
+.token.attr-value,
 .token.function {
 	color: #d2a8ff;
 }
