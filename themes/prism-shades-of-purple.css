@@ -174,7 +174,7 @@ code.language-css .token.selector > .token.pseudo-element {
 
 :root {
 	--am-prism-line-numbers-color: #b362ff44;
-	--am-prism-line-numbers-border: #b362ff11;
+	--am-prism-border-color: #b362ff11;
 	--am-prism-copy-color: #a9b7c6;
 	--am-prism-copy-bg: #b362ff11;
 }

@@ -1,10 +1,10 @@
 /**
- * https://github.com/tinkertrain/panda-syntax-vscode
+ * https://www.michaelandreuzza.com/vscode/serendipity/
  */
 
 code[class*='language-'],
 pre[class*='language-'] {
-	color: #e6e6e6;
+	color: #4e5377;
 }
 
 pre[class*='language-']::-moz-selection,
@@ -12,7 +12,7 @@ pre[class*='language-'] ::-moz-selection,
 code[class*='language-']::-moz-selection,
 code[class*='language-'] ::-moz-selection {
 	text-shadow: none;
-	background: #ffb86c40;
+	background: #6e6a8614;
 }
 
 pre[class*='language-']::selection,
@@ -20,13 +20,14 @@ pre[class*='language-'] ::selection,
 code[class*='language-']::selection,
 code[class*='language-'] ::selection {
 	text-shadow: none;
-	background: #ffb86c40;
+	background: #6e6a8614;
 }
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
 	color: white;
-	background: #292a2b;
+	background: #fdfdfe;
+	border: var(--am-prism-border-width, 1px) solid var(--am-prism-border-color);
 }
 
 :not(pre) > code[class*='language-'] {
@@ -36,84 +37,50 @@ pre[class*='language-'] {
 }
 
 .token.comment {
-	color: #676b79;
+	color: #8388ad;
 	font-style: italic;
 }
 
-.token.operator {
-	color: #e6e6e6;
-}
-
-.token.variable {
-	color: #e6e6e6;
-}
-
-.token.property {
-	color: #e6e6e6;
-}
-
 .token.constant {
-	color: #ffb86c;
+	color: #3788be;
 }
 
 .token.hexcode {
-	color: #ffb86c;
-}
-
-.token.char {
-	color: #45a9f9;
-}
-
-.token.string {
-	color: #19f9d8;
-}
-
-.token.symbol {
-	color: #19f9d8;
-}
-
-.token.inserted {
-	color: #19f9d8;
+	color: #3788be;
 }
 
 .token.punctuation {
-	color: #ffcc95;
+	color: #3788be;
 }
 
-.token.tag {
-	color: #ffcc95;
-}
-
-.token.attr-name {
-	color: #ffcc95;
-}
-
-.token.selector {
-	color: #ffcc95;
+.token.number {
+	color: #f19a8e;
 }
 
 .token.builtin {
-	color: #6fc1ff;
+	color: #f19a8e;
+}
+
+.token.keyword,
+.token.tag {
+	color: #7397de;
+}
+
+.token.attr-name {
+	color: #77aab3;
+}
+
+.token.selector {
+	color: #77aab3;
+}
+
+.token.attr-value,
+.token.string {
+	color: #886cdb;
 }
 
 .token.function {
-	color: #6fc1ff;
-}
-
-.token.regex {
-	color: #6fc1ff;
-}
-
-.token.keyword {
-	color: #ff9ac1;
-}
-
-.token.changed {
-	color: #ff75b5;
-}
-
-.token.deleted {
-	color: #ff2c6d;
+	color: #f19a8e;
 }
 
 .token.important,
@@ -126,8 +93,8 @@ pre[class*='language-'] {
 }
 
 :root {
-	--am-prism-line-numbers-color: #676b7977;
-	--am-prism-border-color: #676b7933;
-	--am-prism-copy-color: #ffcc95;
-	--am-prism-copy-bg: #676b7933;
+	--am-prism-line-numbers-color: #8388ad88;
+	--am-prism-border-color: #8388ad55;
+	--am-prism-copy-color: #4e5377;
+	--am-prism-copy-bg: #8388ad22;
 }

@@ -1,0 +1,118 @@
+/**
+ * https://github.com/be5invis/vsc-theme-verdandi
+ */
+
+code[class*='language-'],
+pre[class*='language-'] {
+	color: #949ca3;
+}
+
+pre[class*='language-']::-moz-selection,
+pre[class*='language-'] ::-moz-selection,
+code[class*='language-']::-moz-selection,
+code[class*='language-'] ::-moz-selection {
+	text-shadow: none;
+	background: #1289ec60;
+}
+
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection,
+code[class*='language-']::selection,
+code[class*='language-'] ::selection {
+	text-shadow: none;
+	background: #1289ec60;
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+	color: white;
+	background: #0f1216;
+	border: var(--am-prism-border-width, 1px) solid var(--am-prism-border-color);
+}
+
+:not(pre) > code[class*='language-'] {
+	padding: 0.1em;
+	border-radius: 0.3em;
+	white-space: normal;
+}
+
+.token.variable {
+	color: #949ca3;
+}
+
+.token.constant {
+	color: #b5bbc0;
+}
+
+.token.char {
+	color: #b5bbc0;
+}
+
+.token.function {
+	color: #b5bbc0;
+}
+
+.token.class-name {
+	color: #b5bbc0;
+}
+
+.token.attr-name {
+	color: #949ca3;
+}
+
+.token.selector {
+	color: #b5bbc0;
+}
+
+.token.property {
+	color: #b5bbc0;
+}
+
+.token.tag {
+	color: #b5bbc0;
+}
+
+.token.comment {
+	color: #5f6871;
+}
+
+.token.punctuation {
+	color: #5f6871;
+}
+
+.token.operator {
+	color: #d8dce0;
+}
+
+.token.builtin {
+	color: #d8dce0;
+}
+
+.token.number {
+	color: #d8dce0;
+}
+
+.token.keyword {
+	color: #d8dce0;
+}
+
+.token.attr-value,
+.token.string {
+	color: #778089;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+:root {
+	--am-prism-line-numbers-color: #5f687177;
+	--am-prism-border-color: #5f687122;
+	--am-prism-copy-color: #949ca3;
+	--am-prism-copy-bg: #5f687118;
+}

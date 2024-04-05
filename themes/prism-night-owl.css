@@ -27,17 +27,11 @@ code[class*='language-'] ::selection {
 	background: rgba(29, 59, 83, 0.99);
 }
 
-@media print {
-	code[class*='language-'],
-	pre[class*='language-'] {
-		text-shadow: none;
-	}
-}
-
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
 	color: white;
 	background: #011627;
+	border: var(--am-prism-border-width, 1px) solid var(--am-prism-border-color);
 }
 
 :not(pre) > code[class*='language-'] {
@@ -135,7 +129,7 @@ pre[class*='language-'] {
 
 :root {
 	--am-prism-line-numbers-color: rgba(99, 119, 119, 0.5);
-	--am-prism-line-numbers-border: rgba(99, 119, 119, 0.1);
+	--am-prism-border-color: rgba(99, 119, 119, 0.1);
 	--am-prism-copy-color: #d6deeb;
 	--am-prism-copy-bg: rgba(99, 119, 119, 0.1);
 }

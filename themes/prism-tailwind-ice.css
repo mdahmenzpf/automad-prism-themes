@@ -1,10 +1,10 @@
 /**
- * https://github.com/daltonmenezes/aura-theme
+ * https://github.com/luciascarlet/tailwind-moon-vscode
  */
 
 code[class*='language-'],
 pre[class*='language-'] {
-	color: #edecee;
+	color: #1a202c;
 }
 
 pre[class*='language-']::-moz-selection,
@@ -12,7 +12,7 @@ pre[class*='language-'] ::-moz-selection,
 code[class*='language-']::-moz-selection,
 code[class*='language-'] ::-moz-selection {
 	text-shadow: none;
-	background: #3d375e7f;
+	background: #805ad522;
 }
 
 pre[class*='language-']::selection,
@@ -20,13 +20,14 @@ pre[class*='language-'] ::selection,
 code[class*='language-']::selection,
 code[class*='language-'] ::selection {
 	text-shadow: none;
-	background: #3d375e7f;
+	background: #805ad522;
 }
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
 	color: white;
-	background: #15141b;
+	background: #ffffff;
+	border: var(--am-prism-border-width, 1px) solid var(--am-prism-border-color);
 }
 
 :not(pre) > code[class*='language-'] {
@@ -35,78 +36,55 @@ pre[class*='language-'] {
 	white-space: normal;
 }
 
-.token.tag {
-	color: #82e2ff;
-}
-
-.token.variable {
-	color: #edecee;
-}
-
-.token.keyword {
-	color: #a277ff;
+.token.comment {
+	color: #a0aec0;
 }
 
 .token.operator {
-	color: #a277ff;
+	color: #805ad5;
 }
 
-.token.attr-name {
-	color: #a277ff;
+.token.attr-name,
+.token.class-name,
+.token.function-definition {
+	color: #805ad5;
 }
 
-.token.selector {
-	color: #a277ff;
-}
-
-.token.punctuation {
-	color: #edecee77;
+.token.keyword {
+	color: #3182ce;
 }
 
 .token.constant {
-	color: #a277ff;
+	color: #3182ce;
 }
 
 .token.hexcode {
-	color: #a277ff;
+	color: #3182ce;
+}
+
+.token.tag {
+	color: #3182ce;
 }
 
 .token.attr-value,
 .token.string {
-	color: #61ffca;
+	color: #38a169;
 }
 
 .token.inserted {
-	color: #61ffca;
+	color: #38a169;
 }
 
-.token.changed {
-	color: #ffca85;
-}
-
-.token.function {
-	color: #ffca85;
+.token.variable {
+	color: #1a202c;
 }
 
 .token.deleted {
-	color: #ff6767;
+	color: #e53e3e;
 }
 
-.token.type-hint,
-.token.builtin {
-	color: #f694ff;
-}
-
-.token.property {
-	color: #f694ff;
-}
-
-.token.comment {
-	color: #edecee5f;
-}
-
-.token.class-name {
-	color: #82e2ff;
+.token.changed {
+	color: #d69e2e;
 }
 
 .token.important,
@@ -119,8 +97,8 @@ pre[class*='language-'] {
 }
 
 :root {
-	--am-prism-line-numbers-color: #444059aa;
-	--am-prism-border-color: #44405933;
-	--am-prism-copy-color: #f694ff;
-	--am-prism-copy-bg: #44405955;
+	--am-prism-line-numbers-color: #a0aec077;
+	--am-prism-border-color: #a0aec055;
+	--am-prism-copy-color: #3182ce;
+	--am-prism-copy-bg: #a0aec033;
 }

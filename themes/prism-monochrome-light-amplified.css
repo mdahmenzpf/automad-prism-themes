@@ -23,13 +23,6 @@ code[class*='language-'] ::selection {
 	background: #f0f0f0;
 }
 
-@media print {
-	code[class*='language-'],
-	pre[class*='language-'] {
-		text-shadow: none;
-	}
-}
-
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
 	color: white;
@@ -119,7 +112,7 @@ pre[class*='language-'] {
 
 :root {
 	--am-prism-line-numbers-color: #94949477;
-	--am-prism-line-numbers-border: #94949438;
+	--am-prism-border-color: #94949438;
 	--am-prism-copy-color: #4c4c4c;
 	--am-prism-copy-bg: #94949422;
 }

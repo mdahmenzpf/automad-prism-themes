@@ -147,7 +147,7 @@ pre > code.highlight {
 
 :root {
 	--am-prism-line-numbers-color: #3c3949;
-	--am-prism-line-numbers-border: #2c2937;
+	--am-prism-border-color: #2c2937;
 	--am-prism-copy-color: #c4b9fe;
 	--am-prism-copy-bg: #6c678355;
 }

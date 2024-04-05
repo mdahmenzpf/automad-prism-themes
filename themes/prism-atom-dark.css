@@ -15,7 +15,6 @@ pre[class*='language-'] {
 	background: #1d1f21;
 }
 
-/* Inline code */
 :not(pre) > code[class*='language-'] {
 	padding: 0.1em;
 	border-radius: 0.3em;
@@ -120,7 +119,7 @@ pre[class*='language-'] {
 
 :root {
 	--am-prism-line-numbers-color: #333333;
-	--am-prism-line-numbers-border: #2a2a2a;
+	--am-prism-border-color: #2a2a2a;
 	--am-prism-copy-color: #ededed;
 	--am-prism-copy-bg: #ededed11;
 }

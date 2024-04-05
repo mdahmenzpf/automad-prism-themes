@@ -18,13 +18,6 @@ code[class*='language-']::mozselection {
 	background: #234879;
 }
 
-@media print {
-	pre[class*='language-'],
-	code[class*='language-'] {
-		text-shadow: none;
-	}
-}
-
 pre[class*='language-'] {
 	background: #161b22;
 }
@@ -106,11 +99,11 @@ pre[class*='language-'] > code[class*='language-'] {
 }
 
 .token.atrule,
-.token.attr-value,
 .token.keyword {
 	color: #a5d6ff;
 }
 
+.token.attr-value,
 .token.function {
 	color: #d2a8ff;
 }
@@ -136,7 +129,7 @@ pre[class*='language-'] > code[class*='language-'] {
 
 :root {
 	--am-prism-line-numbers-color: #8b949e55;
-	--am-prism-line-numbers-border: #8b949e22;
+	--am-prism-border-color: #8b949e22;
 	--am-prism-copy-color: #c9d1d9;
 	--am-prism-copy-bg: #8b949e22;
 }
