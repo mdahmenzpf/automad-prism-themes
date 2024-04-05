@@ -1,0 +1,132 @@
+/**
+ * https://github.com/BeardedBear/bearded-theme
+ */
+
+code[class*='language-'],
+pre[class*='language-'] {
+	color: #bcc1dc;
+}
+
+pre[class*='language-']::-moz-selection,
+pre[class*='language-'] ::-moz-selection,
+code[class*='language-']::-moz-selection,
+code[class*='language-'] ::-moz-selection {
+	text-shadow: none;
+	background: #8eb0e64d;
+}
+
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection,
+code[class*='language-']::selection,
+code[class*='language-'] ::selection {
+	text-shadow: none;
+	background: #8eb0e64d;
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+	color: white;
+	background: #111422;
+}
+
+:not(pre) > code[class*='language-'] {
+	padding: 0.1em;
+	border-radius: 0.3em;
+	white-space: normal;
+}
+
+.token.function.function-variable,
+.token.variable {
+	color: #ff738a;
+}
+
+.token.attr-name {
+	color: #69c3ff;
+}
+
+.token.selector {
+	color: #ff955c;
+}
+
+.token.property {
+	color: #ff955c;
+}
+
+.token.number {
+	color: #ff955c;
+}
+
+.token.builtin {
+	color: #ff738a;
+}
+
+.token.comment {
+	color: #b4bce459;
+	font-style: italic;
+}
+
+.token.attr-value,
+.token.string {
+	color: #3cec85;
+}
+
+.token.doctype,
+.token.punctuation {
+	color: #bcc1dc60;
+}
+
+.token.operator {
+	color: #eacd61;
+}
+
+.token.constant {
+	color: #ff955c;
+}
+
+.token.hexcode {
+	color: #e35535;
+}
+
+.token.char {
+	color: #9aa2cb;
+}
+
+.token.function {
+	color: #69c3ff;
+}
+
+.token.tag {
+	color: #9aa2cb;
+}
+
+.token.class-name {
+	color: #ff955c;
+}
+
+.token.keyword {
+	color: #22ecdb;
+}
+
+.token.url {
+	color: #3cec85;
+}
+
+.token.symbol {
+	color: #3cec85;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+:root {
+	--am-prism-line-numbers-color: #b4bce444;
+	--am-prism-border-color: #b4bce416;
+	--am-prism-copy-color: #bcc1dc;
+	--am-prism-copy-bg: #b4bce411;
+}
