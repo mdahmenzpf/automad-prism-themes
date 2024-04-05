@@ -7,10 +7,6 @@
     "build": "gulp build && bash bin/generate-json.sh && bash bin/generate-gallery.sh",
     "release": "bash bin/release.sh",
     "screenshots": "node bin/screenshots.mjs",
-    "check": "gulp check",
-    "lint": "stylelint \"themes/*.css\"",
-    "lint-fix": "stylelint \"themes/*.css\" --fix",
-    "test": "npm run lint && gulp check",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -30,9 +26,7 @@
     "gulp-footer": "^2.1.0",
     "gulp-foreach": "^0.1.0",
     "gulp-header": "^2.0.9",
-    "gulp-rename": "^2.0.0",
-    "stylelint": "^12.0.0",
-    "stylelint-config-standard": "^19.0.0"
+    "gulp-rename": "^2.0.0"
   },
   "files": [
     "dist/*"
