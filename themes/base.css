@@ -60,7 +60,7 @@ div.code-toolbar > .toolbar > .toolbar-item > button.copy-to-clipboard-button {
 	font-size: var(--am-prism-font-size, 0.8em);
 	font-family: var(--am-prism-font-family, ui-monospace), monospace;
 	font-weight: 600 !important;
-	line-height: 2em;
+	line-height: 2.25em;
 	color: var(--am-prism-copy-color);
 	background-color: var(--am-prism-copy-bg);
 	border-radius: calc(var(--am-prism-border-radius, 0.4em) - 0.1em);
